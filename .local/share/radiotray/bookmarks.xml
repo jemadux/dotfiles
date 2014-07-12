@@ -1,0 +1,220 @@
+<bookmarks>
+  <group name="root">
+    <group name="Jazz">
+      <bookmark name="Smooth Jazz" url="http://smoothjazz.com/streams/smoothjazz_128.pls"/>
+      <bookmark name="Cool Jazz" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=30773"/>
+      <bookmark name="Trumpet Jazz" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1377234"/>
+    </group>
+    <group name="Latin">
+      <bookmark name="Onda Tropical" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=506392"/>
+      <bookmark name="Top Latino Radio" url="http://online.radiodifusion.net:8020/listen.pls"/>
+      <bookmark name="Salsa Stream" url="http://listen.sky.fm/public3/salsa.pls"/>
+    </group>
+    <group name="Classic Rock">
+      <bookmark name="181.FM Classic Hits" url="http://sc-rly.181.fm:80/stream/1094"/>
+      <bookmark name=".977 Classic Rock" url="http://www.977music.com/tunein/web/classicrock.asx"/>
+      </group>
+      <group name="Classical">
+        <bookmark name="KDFC" url="http://provisioning.streamtheworld.com/pls/KDFCFM.pls"/>
+        <bookmark name="Classic FM" url="http://media-ice.musicradio.com/ClassicFMMP3.m3u"/>
+        <bookmark name="WCPE" url="http://www.ibiblio.org/wcpe/wcpe.pls"/>
+        <bookmark name="CINEMIX" url="http://cinemix.us/cine.asx"/>
+      </group>
+      <group name="Pop / Rock">
+        <bookmark name="Radio Paradise" url="http://www.radioparadise.com/musiclinks/rp_128aac.m3u"/>
+        <bookmark name=".977 The Hitz Channel" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1280356"/>
+        <bookmark name="Enjoy Station" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1377285"/>
+        <bookmark name="80s Sky.FM" url="http://listen.sky.fm/public3/the80s.pls"/>
+      </group>
+      <group name="Oldies">
+        <bookmark name="AM 1710" url="http://lin2.ash.fast-serv.com:9022/listen.pls"/>
+        <bookmark name="WNAR" url="http://live.wnar-am.com:8500/listen.pls"/>
+      </group>
+      <group name="Chill">
+        <bookmark name="Groove Salad" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1325107"/>
+        <bookmark name="181.FM" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1275050"/>
+        <bookmark name="Lounge Radio" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1288934"/>
+      </group>
+      <group name="Ελληνικά">
+        <group name="Αθήνα">
+          <bookmark name="902 FM" url="mms://mediaserver2.otenet.gr/radio902gr"/>
+          <bookmark name="98 FM" url="http://98fm.ath.cx:8000/live48.m3u"/>
+          <bookmark name="Alpha Radio" url="mms://lu-nt-stream01.bce.lu/Alpha989"/>
+          <bookmark name="Freedom" url="mms://a1251.l4434923250.c44349.g.lm.akamaistream.net/D/1251/44349/v0001/reflector:23250"/>
+          <bookmark name="Ant1" url="http://ant1.live24.gr/ant1"/>
+          <bookmark name="Athens Deejay" url="mms://213.186.58.26/deejay"/>
+          <bookmark name="Athens FM" url="mms://178.162.134.33/afm?MSWMExt=.asf"/>
+          <bookmark name="Atlantis FM" url="http://pasradio.com:7120/"/>
+          <bookmark name="Best Radio" url="mms://best.live24.gr/best1222?MSWMExt=.asf"/>
+          <bookmark name="Derti" url="mms://derti.live24.gr/derty1000?MSWMExt=.asf"/>
+          <bookmark name="Flash" url="mms://flash.live24.gr/flash5252?MSWMExt=.asf"/>
+          <bookmark name="Free Angel" url="http://174.36.237.66:8014"/>
+          <bookmark name="Galaxy 92" url="mms://galaxy.live24.gr/galaxy9292?MSWMExt=.asf"/>
+          <bookmark name="Je t'aime" url="mms://live.onestreaming.com/jetaime?MSWMExt=.asf"/>
+          <bookmark name="John Greek" url="mms://johngreek.live24.gr/polis2795?MSWMExt=.asf"/>
+          <bookmark name="Kiss FM" url="mms://kissfm.live24.gr/kiss2111?MSWMExt=.asf"/>
+          <bookmark name="Kosmos" url="mms://a1232.l3271935231.c32719.g.lm.akamaistream.net/D/1232/32719/v0001/reflector:35231"/>
+          <bookmark name="Love Radio" url="mms://loveradio.live24.gr/loveradio-1000?MSWMExt=.asf"/>
+          <bookmark name="Mad Radio" url="mms://media.mad.gr/madradio"/>
+          <bookmark name="Nitro Radio" url="mms://nitro.live24.gr/nitro4555?MSWMExt=.asf"/>
+          <bookmark name="Nova Sport FM" url="mms://sportfm.live24.gr/sportfm7712?MSWMExt=.asf"/>
+          <bookmark name="Oasis Fm" url="mms://oasis.live24.gr/oasis8888?MSWMExt=.asf"/>
+          <bookmark name="Orange" url="mms://orange.live24.gr/orange9320?MSWMExt=.asf"/>
+          <bookmark name="Palmos On Air" url="http://s6.onweb.gr:8010/"/>
+          <bookmark name="Paradise Radio" url="http://s1.onweb.gr:8850/"/>
+          <bookmark name="Radio Gold" url="mms://radiogold.live24.gr/radiogold?MSWMExt=.asf"/> 
+          <bookmark name="Real FM" url="mms://realfm.live24.gr/realfm?MSWMExt=.asf"/>
+          <bookmark name="Red FM" url="mms://a660.l3168030659.c31680.g.lm.akamaistream.net/d/660/31680/v0001/reflector:30659"/>
+          <bookmark name="Rock FM" url="mms://rockfm.mediabox.gr/Rockfm?MSWMExt=.asf"/>
+          <bookmark name="Sentra FM" url="mms://sentrafm.live24.gr/sentrafm"/>
+          <bookmark name="Sfera" url="mms://sfera.live24.gr/sfera4132?MSWMExt=.asf"/>
+          <bookmark name="V FM" url="mms://nordr.live24.gr/village883?MSWMExt=.asf"/>
+          <bookmark name="Ακτίνα" url="http://s2.onweb.gr:8632/listen.pls"/>
+          <bookmark name="Δίεση" url="mms://diesi.live24.gr/diesi1013?MSWMExt=.asf"/>
+          <bookmark name="Δίφωνο" url="http://icecast.reth.gr:8300/live_3rdd"/>                    
+          <bookmark name="Δρόμος FM" url="mms://nordr.live24.gr/dromos898?MSWMExt=.asf"/>
+          <bookmark name="Εν Λευκώ" url="mms://enleuko.live24.gr/enleuko877?MSWMExt=.asf"/>
+          <bookmark name="Ε.ΡΑ. Δεύτερο" url="mms://a1782.l3271951781.c32719.g.lm.akamaistream.net/D/1782/32719/v0001/reflector:51781"/>
+          <bookmark name="Ε.ΡΑ. Σπορ" url="mms://a1113.l3271935112.c32719.g.lm.akamaistream.net/D/1113/32719/v0001/reflector:35112"/>
+          <bookmark name="Ε.ΡΑ. Τρίτο" url="mms://a1318.l3271931317.c32719.g.lm.akamaistream.net/D/1318/32719/v0001/reflector:31317"/>
+          <bookmark name="Κρητική Ραδιοφωνία" url="http://s4.onweb.gr:8476/listen.pls"/>
+          <bookmark name="Μελωδία" url="http://s4.onweb.gr:8050/listen.pls"/>
+          <bookmark name="ΝΕΤ" url="mms://a1709.l3271943708.c32719.g.lm.akamaistream.net/D/1709/32719/v0001/reflector:43708"/>
+          <bookmark name="Πειραϊκή Εκκλησία" url="http://stream.greekradios.gr:2016/listen.pls"/>
+          <bookmark name="ΡΣ Εκκλησίας της Ελλάδος" url="mms://mediaserver.otenet.gr/ecclesia"/>
+          <bookmark name="Ράδιο Blackman" url="http://rs9.radiostreamer.com:8210/listen.pls"/>
+          <bookmark name="Ράδιο Άστυ" url="http://shoutcast.24radio.gr:8072/listen.pls"/>
+          <bookmark name="Ρυθμός" url="mms://nordr.live24.gr/rythmos949live"/>
+          <bookmark name="ΣΚΑΙ" url="mms://a1505.l827459504.c8274.g.lm.akamaistream.net/D/1505/8274/v0001/reflector:59504"/>
+          <bookmark name="Στο Κόκκινο" url="http://stokokkino.gr:8000/stream.m3u"/>
+          <bookmark name="Φιλία" url="mms://a1367.l3271923366.c32719.g.lm.akamaistream.net/D/1367/32719/v0001/reflector:23366"/>
+          <bookmark name="Φλόγα" url="mms://live.onestreaming.com/radiofloga"/> 
+        </group>  
+        <group name="Διάφορα">
+          <bookmark name="Arion" url="mms://golive.onestreaming.com/arion2"/>
+          <bookmark name="Style FM Αργολίδας" url="mms://live.onestreaming.com/stylefm"/>
+          <bookmark name="Ράδιο Ξηρόμερο" url="http://188.40.131.14:8714/listen.pls"/>
+          <bookmark name="Δίαυλος Χαλκίδας" url="http://74.63.48.245:8035/listen.pls"/>
+          <bookmark name="Life FM Κέρκυρας" url="http://s1.onweb.gr:8836/listen.pls"/>
+          <bookmark name="Ant1 Αιγαίου" url="mms://live.onestreaming.com/aegeanant1?MSWMExt=.asf"/>
+          <bookmark name="Ε.ΡΑ. Αιγαίου" url="mms://era.aegean.gr/era"/>
+          <bookmark name="Πάρος FM" url="http://s1.onweb.gr:8098/listen.pls"/>
+        </group>  
+        <group name="Ήπειρος">
+          <bookmark name="Orange" url="http://orangeradio.no-ip.biz:8000/listen.pls"/>
+          <bookmark name="Top 105" url="http://208.43.115.44:8072/listen.pls"/>
+          <bookmark name="Action Radio" url="mms://live.onestreaming.com/actionradio"/>
+          <bookmark name="Best 90.7" url="mms://907ioannina.live24.gr/907ioannina"/>
+          <bookmark name="Ioannina DeeJay" url="http://shoutcast.24radio.gr:8080/"/>
+          <bookmark name="Safari FM" url="http://94.23.159.115:8088/listen.pls"/>
+          <bookmark name="Sky Radio" url="mms://64.202.98.81/skyradio"/>
+          <bookmark name="Star FM" url="http://208.43.115.44:9570/"/>
+          <bookmark name="Studio E" url="mms://live.onestreaming.com/studioe"/>
+          <bookmark name="Βήμα FM" url="http://74.63.48.245:8070/"/>
+          <bookmark name="Ηχώ" url="mms://live.onestreaming.com/hxoioan"/>
+          <bookmark name="Ράδιο Ήπειρος" url="http://174.36.237.66:9450/"/>
+          <bookmark name="Ράδιο Φάρος" url="http://s6.onweb.gr:8056/listen.pls"/>
+          <bookmark name="Ρωμαίος FM" url="http://208.43.121.133:9400/listen.pls"/>
+          <bookmark name="Ράδιο Πρέβεζα" url="http://radiopreveza.mine.nu:8000/listen.pls"/>
+        </group>
+        <group name="Μακεδονία">
+          <bookmark name="Star FM Γρεβενών" url="mms://live.onestreaming.com/starfmdm"/>
+          <bookmark name="Ράδιο Γρεβενά" url="mms://live.onestreaming.com/radiogrevena"/>
+          <bookmark name="NRG Radio" url="mms://m1.onweb.gr/nrg889"/>
+          <bookmark name="Star FM Δράμας" url="mms://radiofeeds1.mediabox.gr/startvfm"/>
+          <bookmark name="Energy FM" url="http://s1.onweb.gr:8412/listen.pls"/>
+          <bookmark name="Skyline 982" url="http://87.117.198.140:8026/listen.pls"/>
+          <bookmark name="Energy FM Καβάλας" url="http://212.117.164.98:8008/listen.pls"/>
+          <bookmark name="Στόχος FM" url="mms://m2.onweb.gr/stoxosfm"/>
+          <bookmark name="Ράδιο Καστοριά" url="http://87.117.198.140:8062/listen.pls"/>
+          <bookmark name="Ράδιο Σύνορα" url="http://s1.onweb.gr:8064/listen.pls"/>
+          <bookmark name="Diva FM" url="http://72.55.146.84:8004/listen.pls"/>
+          <bookmark name="Siera FM" url="http://72.55.146.84:8020/"/>
+          <bookmark name="Viva FM" url="http://87.117.198.140:8006/listen.pls"/>
+          <bookmark name="Πελλα FM" url="http://s5.onweb.gr:8002/listen.pls"/>
+          <bookmark name="Σκάι 92.6" url="http://s1.onweb.gr:8866/listen.pls"/>
+          <bookmark name="Radio 1" url="mms://101fm.dyndns.tv:8002/"/>
+          <bookmark name="Capital" url="mms://live.onestreaming.com/capital977"/>
+          <bookmark name="Max FM" url="http://78.46.46.214:7064/listen.pls"/>
+          <bookmark name="Eros Radio" url="http://78.46.46.214:7046/listen.pls"/>
+        </group>  
+        <group name="Θεσσαλονίκη">
+          <bookmark name="102 FM - ΕΡΤ3" url="mms://a1758.l3271933757.c32719.g.lm.akamaistream.net/D/1758/32719/v0001/reflector:33757"/>
+          <bookmark name="1055 Rock" url="http://www.1055rock.gr/playlist.asx"/>
+          <bookmark name="1055 Rock (2)" url="http://radio.onweb.gr:8078/listen.pls"/>
+          <bookmark name="9.58 - ΕΡΤ3" url="mms://62.103.164.228:8080/et3-958"/>
+          <bookmark name="Cool FM" url="http://sc.greekstream.net:4010/listen.pls"/>
+          <bookmark name="FM 100" url="http://78.46.46.215:7124/listen.pls"/>
+          <bookmark name="Heart FM" url="http://78.129.143.157:8000/heartfm"/>
+          <bookmark name="Imagine897" url="http://imagine.1stepstream.com:8000/live.m3u"/>
+          <bookmark name="Libero" url="http://74.63.48.245:8081"/>
+          <bookmark name="Off Radio" url="http://offradio.greekstream.net:80/"/>
+          <bookmark name="Republic" url="http://89.149.244.47:8500/listen.pls"/>
+          <bookmark name="RockRadio" url="http://83.133.127.198:9096/"/>
+          <bookmark name="RSO" url="http://live.isolservers.com:8200/"/>
+          <bookmark name="Safari FM" url="http://83.133.127.198:8989/"/>
+          <bookmark name="Star FM" url="http://78.129.143.157:8000/starfm"/>
+          <bookmark name="Studio 3" url="http://s1.onweb.gr:8408/listen.pls"/>
+          <bookmark name="Zoo Radio" url="http://stream.greekradios.gr:9060/listen.pls"/>
+          <bookmark name="Αθλητικό Metropolis" url="http://174.120.46.26:9000/listen.pls"/>
+          <bookmark name="Sunshine" url="http://74.63.48.245:8083/listen.pls"/>
+          <bookmark name="Ερωτικός FM" url="http://www.eroticos.gr/live.pls"/>
+          <bookmark name="Λυδία η Φιλιππησία" url="mms://energy15.egihosting.com/321488"/>
+          <bookmark name="Μελωδικός" url="http://stream.greekradios.gr:2042/listen.pls"/>
+          <bookmark name="Μουσικός Γαλαξίας" url="http://s1.onweb.gr:8034/listen.pls"/>
+          <bookmark name="Καλαμαριά FM" url="http://sc.greekstream.net/listen.pls"/>
+          <bookmark name="Όλα FM" url="http://live.isolservers.com:8300/listen.pls"/>
+          <bookmark name="Πανόραμα 9,84" url="mms://live.onestreaming.com/panoramafm"/>
+          <bookmark name="Παλμός" url="http://stream.greekradios.gr:2044/listen.pls"/>
+          <bookmark name="Παραδοσιακός Studio 3" url="http://s1.onweb.gr:8408/listen.pls"/>
+          <bookmark name="Πειρατικός" url="mms://golive.onestreaming.com/peiratikos?MSWMExt=.asf"/>
+          <bookmark name="Ράδιο Έκφραση" url="http://sc.greekstream.net:4012/listen.pls"/>
+          <bookmark name="Ράδιο Θεσσαλονίκη" url="http://178.32.72.194:8060/rthes"/>
+          <bookmark name="Ραδιοκύματα" url="http://s1.onweb.gr:8812/listen.pls"/>
+          <bookmark name="ΡΣ Helexpo ΔΕΘ" url="http://s1.onweb.gr:8436/listen.pls"/>
+          <bookmark name="Real FM" url="http://83.133.127.198:8999/listen.pls"/>
+        </group>
+        <group name="Κρήτη">
+          <bookmark name="Best Radio" url="mms://live.onestreaming.com/best947"/>
+          <bookmark name="KISS FM Crete" url="http://s6.onweb.gr:8032/listen.pls"/>
+          <bookmark name="Ερωτόκριτος" url="http://s2.onweb.gr:8652/listen.pls"/>
+          <bookmark name="Κρητικός FM" url="http://s1.onweb.gr:8852/listen.pls"/>
+          <bookmark name="Ράδιο Κρήτη" url="mms://62.1.1.141/radiokriti"/>
+          <bookmark name="Club FM" url="mms://live.onestreaming.com/club937"/>
+          <bookmark name="Δίαυλος Κρήτης" url="mms://diavlos969.live24.gr/diavlos969"/>
+          <bookmark name="Ραδιοκύματα" url="mms://live.onestreaming.com/radiokimata"/>
+          <bookmark name="Τάλος FM" url="mms://hotsoft.ws/talosfm"/>
+          <bookmark name="Magic FM" url="mms://hotsoft.ws:8086/magicfm"/>
+          <bookmark name="Radio 99.6" url="mms://live.onestreaming.com/radio996"/>
+          <bookmark name="D-code" url="http://s3.onweb.gr:8032/listen.pls"/>
+          <bookmark name="Νότος FM" url="http://s4.onweb.gr:8484/listen.pls"/>
+        </group>
+        <group name="Πάτρα">
+          <bookmark name="Enjoy Radio" url="http://s3.onweb.gr:8046/listen.pls"/>
+          <bookmark name="Galaxy" url="mms://live.onestreaming.com/galaxy1061?MSWMExt=.asf"/>
+          <bookmark name="Mojo Radio" url="mms://broadcast.hol.gr/mojoradio"/>
+          <bookmark name="Έντεχνος FM" url="http://shoutcast.24radio.gr:8068/listen.pls"/>
+          <bookmark name="Sfera" url="http://79.129.8.153:7020"/>
+          <bookmark name="You FM" url="mms://live.onestreaming.com/youfm?MSWMExt=.asf"/>
+          <bookmark name="Wave FM" url="http://r3.webradiostreams.com:7080/listen.pls"/>
+          <bookmark name="MFM" url="http://79.129.8.153:7030"/>
+          <bookmark name="Ιόνιον FM" url="mms://broadcast.hol.gr/IonionFMU"/>
+          <bookmark name="Master FM" url="http://shoutcast.24radio.gr:8014/listen.pls"/>
+          <bookmark name="Χρώμα FM" url="http://s6.onweb.gr:8058/listen.pls"/>
+          <bookmark name="ΣΚΑΙ Πάτρας" url="http://r4.webradiostreams.com:7002/listen.pls"/>
+          <bookmark name="Ραδιο Πάτρα" url="mms://live.onestreaming.com/radiopatra"/>
+          <bookmark name="Ωμέγα" url="http://www.omegafm.gr:1755/omegafm.m3u"/> 
+	  <bookmark name="uPatrasFM" url="http://150.140.144.152:8000/"/>
+        </group> 
+        <group name="Online">
+	  <group name="Radio Art">
+            <bookmark name="Jazz / World" url="http://85.17.238.96:8050/listen.pls"/>
+            <bookmark name="Greek Art / Classical" url="http://85.17.238.96:8060/listen.pls"/> 
+            <bookmark name="Antistress" url="http://85.17.238.96:8350/listen.pls"/>
+	  </group>
+          <bookmark name="RadioActive" url="http://premium5.listen2myradio.com/tunein.php/clazarid/playlist.pls"/>
+          <bookmark name="eRock.gr" url="http://www.e-rock.gr:9000/listen.pls"/>
+        </group>  
+      </group>
+  </group>
+</bookmarks>
