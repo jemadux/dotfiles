@@ -4,7 +4,7 @@ set visualbell t_vb=
 
 set guifont=Ubuntu \Mono\ 9
 
- "no GUI
+"no GUI
 set guioptions-=l " no left scrollbar
 set guioptions-=L " no left scrollbar
 set guioptions-=r " no Right scrollbar
