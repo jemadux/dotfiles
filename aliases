@@ -1,0 +1,27 @@
+##Youtube-dl
+alias ytdlmp3t='youtube-dl -x --embed-thumbnail --audio-format mp3'
+alias ytdlmp3='youtube-dl -x --embed-thumbnail --audio-format mp3'
+#ArchLinux 
+alias bkup='pacman -Qqe | grep -v "$(pacman -Qmq)" > pkglist'
+alias rstr='yain $(cat pkglist)'
+#protonvpn
+alias protonc="sudo protonvpn connect"
+alias protons="sudo protonvpn c -f"
+alias protonst="sudo protonvpn disconnect"
+#Misc
+alias kairos='curl http://wttr.in/peraia'
+alias weather='wget -qO - wttr.in/peraia'
+alias covid='curl snf-878293.vm.okeanos.grnet.gr'
+alias myip='ip -br -c a'
+alias my-ip='curl ipinfo.io/ip'
+alias scast='mplayer -tv driver=v4l2:width=320:height=240: -vo xv tv:// -geometry "99%:98%" -noborder -ontop'
+alias upzsh='source ~/.zshrc'
+alias upomz='omz update'
+alias c='clear'
+alias svi='sudo vim'
+## blackarch
+alias bag='sudo pacman -Sg | grep blackarch'
+##yay news 
+alias yanews='yay -Pw'
+##details
+alias details='inxi -Fxxxza'
