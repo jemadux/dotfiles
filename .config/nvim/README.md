@@ -44,11 +44,11 @@ However, you can substitute "~"(tilde) for $HOME and it should work fine.
 ###### Linux
 
 ```
-    mkdir $HOME/.vim
-    cd $HOME/.vim
-    mkdir backup
-    mkdir swap
-    mkdir bundle
+    mkdir $HOME/.config/nvim
+    cd $HOME/.conifg/nvim
+    mkdir .config/.nvim/backup
+    mkdir .config/nvim/swap
+    mkdir .config/nvim/bundle
 ```
 
 5. Open neovim
