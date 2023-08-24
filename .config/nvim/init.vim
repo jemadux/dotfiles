@@ -1,192 +1,161 @@
-" Locate python in windows environment
-if has('win64') || has('win32') || has('win16')
-	let g:python3_host_prog = 'C:\Python311\python.exe'
+let mapleader =","
+
+if ! filereadable(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autoload/plug.vim"'))
+	echo "Downloading junegunn/vim-plug to manage plugins..."
+	silent !mkdir -p ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autoload/
+	silent !curl "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" > ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autoload/plug.vim
+	autocmd VimEnter * PlugInstall
 endif
 
-" Enable mouse scrolling and selecting in nvim-qt
-set mouse=a
+map ,, :keepp /<++><CR>ca<
+imap ,, <esc>:keepp /<++><CR>ca<
 
-" Disable entering visual mode when dragging mouse
-noremap <LeftDrag> <LeftMouse>
-noremap! <LeftDrag> <LeftMouse>
-
-" set directories for backup, swap, and undo
-set backupdir=~/.config/nvim/.backup/
-set directory=~/config/nvim/.swap/
-set undodir=~/.config/nvim/undo/
-
-" vim-plug CONFIG
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-call plug#begin('$HOME/.config/nvim/bundle')
-
-" autocorrect.vim Autocorrect misspelled words from a predefined list
-Plug 'mitchpaulus/autocorrect.vim'
-
-" IndentLine: Display indentation guides in yaml files
-Plug 'Yggdroot/indentLine'
-
-" vim-smoothie - smooth scrolling!
-Plug 'psliwka/vim-smoothie'
-
-" vim-javacomplete2: omni-completion plugin for Java
-Plug 'artur-shaik/vim-javacomplete2'
-
-" elm-vim: syntax, indentation, build, formatting, etc. for elm-lang
-Plug 'ElmCast/elm-vim'
-
-" vim-surround: Easily edit surrounding quotes and parentheses
+call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"'))
 Plug 'tpope/vim-surround'
-
-" vim-airline: Status bar at the bottom
+Plug 'preservim/nerdtree'
+Plug 'junegunn/goyo.vim'
+Plug 'ellisonleao/gruvbox.nvim'
+Plug 'jreybert/vimagit'
+Plug 'vimwiki/vimwiki'
 Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-commentary'
+Plug 'ap/vim-css-color'
+call plug#end()
 
-" dispatch.vim - Asynchronous build and test dispatcher
-Plug 'tpope/vim-dispatch'
+set title
+set bg=dark
+set go=a
+colorscheme gruvbox
+set mouse=a
+set nohlsearch
+set clipboard+=unnamedplus
+set noshowmode
+set noruler
+set laststatus=0
+set noshowcmd
 
-" AsyncRun run commands asynchronously and output to quickfix window
-Plug 'skywind3000/asyncrun.vim'
+" Some basics:
+	nnoremap c "_c
+	set nocompatible
+	filetype plugin on
+	syntax on
+	set encoding=utf-8
+	set number relativenumber
+" Enable autocompletion:
+	set wildmode=longest,list,full
+" Disables automatic commenting on newline:
+	autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+" Perform dot commands over visual blocks:
+	vnoremap . :normal .<CR>
+" Goyo plugin makes text more readable when writing prose:
+	map <leader>f :Goyo \| set bg=light \| set linebreak<CR>
+" Spell-check set to <leader>o, 'o' for 'orthography':
+	map <leader>o :setlocal spell! spelllang=en_us<CR>
+" Splits open at the bottom and right, which is non-retarded, unlike vim defaults.
+	set splitbelow splitright
 
-" Errormarker highlights lines that contain errors
-Plug 'mh21/errormarker.vim'
+" Nerd tree
+	map <leader>n :NERDTreeToggle<CR>
+	autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+    if has('nvim')
+        let NERDTreeBookmarksFile = stdpath('data') . '/NERDTreeBookmarks'
+    else
+        let NERDTreeBookmarksFile = '~/.vim' . '/NERDTreeBookmarks'
+    endif
 
-" ALE: syntax fixing and linting for many languages including Ruby and Python
-Plug 'dense-analysis/ale'
+" vimling:
+	nm <leader>d :call ToggleDeadKeys()<CR>
+	imap <leader>d <esc>:call ToggleDeadKeys()<CR>a
+	nm <leader>i :call ToggleIPA()<CR>
+	imap <leader>i <esc>:call ToggleIPA()<CR>a
+	nm <leader>q :call ToggleProse()<CR>
 
-" rust.vim: Rust file detection, highlighting, formatting etc..
-Plug 'rust-lang/rust.vim'
+" Shortcutting split navigation, saving a keypress:
+	map <C-h> <C-w>h
+	map <C-j> <C-w>j
+	map <C-k> <C-w>k
+	map <C-l> <C-w>l
 
-" RACER: Rust autocompletion
-Plug 'racer-rust/racer'
+" Replace ex mode with gq
+	map Q gq
 
-" plastic theme
-Plug 'flrnd/plastic.vim'
+" Check file in shellcheck:
+	map <leader>s :!clear && shellcheck -x %<CR>
 
-" monokai-tasty theme
-Plug 'patstockwell/vim-monokai-tasty'
+" Open my bibliography file in split
+	map <leader>b :vsp<space>$BIB<CR>
+	map <leader>r :vsp<space>$REFER<CR>
 
-" vim-colorschemes pack
-Plug 'flazz/vim-colorschemes'
+" Replace all is aliased to S.
+	nnoremap S :%s//g<Left><Left>
 
-" vim-quickui
-Plug 'skywind3000/vim-quickui'
+" Compile document, be it groff/LaTeX/markdown/etc.
+	map <leader>c :w! \| !compiler "%:p"<CR>
 
-" soywod iris. Email in vim!
-Plug 'soywod/iris.vim'
+" Open corresponding .pdf/.html or preview
+	map <leader>p :!opout "%:p"<CR>
 
-" vim-snippets. More code snippets for markdown
-Plug 'honza/vim-snippets'
+" Runs a script that cleans out tex build files whenever I close out of a .tex file.
+	autocmd VimLeave *.tex !texclear %
 
-" vim-markdown. Markdown highlighting
-Plug 'plasticboy/vim-markdown'
+" Ensure files are read as what I want:
+	let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown','.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+	map <leader>v :VimwikiIndex<CR>
+	let g:vimwiki_list = [{'path': '~/.local/share/nvim/vimwiki', 'syntax': 'markdown', 'ext': '.md'}]
+	autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markdown
+	autocmd BufRead,BufNewFile *.ms,*.me,*.mom,*.man set filetype=groff
+	autocmd BufRead,BufNewFile *.tex set filetype=tex
 
-" markdown-preview. Preview markdown file in browser
-Plug 'iamcco/markdown-preview.nvim'
+" Save file as sudo on files that require root permission
+	cabbrev w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
-" All of your Plugins must be added before the following line
-call plug#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PlugList       - lists configured plugins
-" :PlugInstall    - Install plugins
-" :PlugUpdate	  - Install or update plugins
-" :PlugClean      - Remove unlisted plugins
-" :PlugUpgrade	  - Upgrade vim-plug itself
-" :PlugStatus	  - Check the status of plugins
-" :PlugDiff	  - Examine changes from the previous update and the pending changes
-" :PlugSnapshot	  - Generate script for restoring the current snapshot of plugins
-"
-" Plugin configuration
-" javacomplete2 configuration
-autocmd FileType java setlocal omnifunc=javacomplete#Complete
-" set JAVA_HOME so JDK is used instead of JRE https://stackoverflow.com/a/46885299
+" Enable Goyo by default for mutt writing
+	autocmd BufRead,BufNewFile /tmp/neomutt* let g:goyo_width=80
+	autocmd BufRead,BufNewFile /tmp/neomutt* :Goyo | set bg=light
+	autocmd BufRead,BufNewFile /tmp/neomutt* map ZZ :Goyo\|x!<CR>
+	autocmd BufRead,BufNewFile /tmp/neomutt* map ZQ :Goyo\|q!<CR>
 
-" source vim configuration files
-" After plugins have loaded to prevent errors
-if has('win32') || has('win16')
-    source $HOME\AppData\Local\nvim\format.vim
-    source $HOME\AppData\Local\nvim\html.vim
-    source $HOME\AppData\Local\nvim\keybindings.vim
-    source $HOME\AppData\Local\nvim\quickui.vim
-    source $HOME\AppData\Local\nvim\theme.vim
-else
-    source ~/.config/nvim/format.vim
-    source ~/.config/nvim/html.vim
-    source ~/.config/nvim/keybindings.vim
-    source ~/.config/nvim/quickui.vim
-    source ~/.config/nvim/theme.vim
+" Automatically deletes all trailing whitespace and newlines at end of file on save. & reset cursor position
+ 	autocmd BufWritePre * let currPos = getpos(".")
+	autocmd BufWritePre * %s/\s\+$//e
+	autocmd BufWritePre * %s/\n\+\%$//e
+  autocmd BufWritePre *.[ch] %s/\%$/\r/e " add trailing newline for ANSI C standard
+  autocmd BufWritePre *neomutt* %s/^--$/-- /e " dash-dash-space signature delimiter in emails
+  	autocmd BufWritePre * cal cursor(currPos[1], currPos[2])
+
+" When shortcut files are updated, renew bash and ranger configs with new material:
+	autocmd BufWritePost bm-files,bm-dirs !shortcuts
+" Run xrdb whenever Xdefaults or Xresources are updated.
+	autocmd BufRead,BufNewFile Xresources,Xdefaults,xresources,xdefaults set filetype=xdefaults
+	autocmd BufWritePost Xresources,Xdefaults,xresources,xdefaults !xrdb %
+" Recompile dwmblocks on config edit.
+	autocmd BufWritePost ~/.local/src/dwmblocks/config.h !cd ~/.local/src/dwmblocks/; sudo make install && { killall -q dwmblocks;setsid -f dwmblocks }
+
+" Turns off highlighting on the bits of code that are changed, so the line that is changed is highlighted but the actual text that has changed stands out on the line and is readable.
+if &diff
+    highlight! link DiffText MatchParen
 endif
-" set AsyncRun's encoding to be the same as neovim
-let g:asyncrun_encs = 'gbk'
 
-" display AsyncRun status in vim-airline
-let g:asyncrun_status = "stopped"
-let g:airline_section_error = airline#section#create_right(['%{g:asyncrun_status}'])
-
-" Configure IndentLine to display a thinner line
-" let g:indentLine_char = '⦙'
-
-" AUTO-CORRECT CONFIGURATION
-
-" Load for particular file types
-let g:AutocorrectFiletypes = ["text","markdown"]
-
-" Change auto-correct file location
-if has('win32') || has('win16')
-    let g:AutocorrectPersonalFile='~\AppData\local\nvim\autocorrect.txt'
-else
-    let g:AutocorrectPersonalFile='~/.config/nvim/autocorrect.txt'
-endif
-
-" VIM-AIRLINE CONFIGURATION
-" Display all buffers when only one tab is open
-let g:airline#extensions#tabline#enabled = 1
-
-" Buffer indicator format: display full path on top right of buffer
-let g:airline#extensions#tabline#formatter = 'unique_tail'
-
-" Enable Capslock integration
-let g:airline#extensions#capslock#enabled = 1
-
-" SQL workbench configuration
-let g:sw_exe = "C:\\tools\\sqlworkbench\\SQLWorkbench.cmd"
-let g:sw_tmp = "/tmp"
-let g:sw_config_dir = "$HOME\\.sqlworkbench"
-
-""" ultisnips configuration
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
-
-" BLOCK SELECTION
-" https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim/1676690#1676690
-
-" ALE configuration: show the number of errors and warnings in status bar
-" Taken from https://www.vimfromscratch.com/articles/vim-for-ruby-and-rails-in-2019/
-function! LinterStatus() abort
-    let l:counts = ale#statusline#Count(bufnr(''))
-
-    let l:all_errors = l:counts.error + l:counts.style_error
-    let l:all_non_errors = l:counts.total - l:all_errors
-
-    return l:counts.total == 0 ? '✨ all good ✨' : printf(
-		\ '😞 %dW %dE',
-		\ all_non_errors,
-		\ all_errors
-		\)
+" Function for toggling the bottom statusbar:
+let s:hidden_all = 0
+function! ToggleHiddenAll()
+    if s:hidden_all  == 0
+        let s:hidden_all = 1
+        set noshowmode
+        set noruler
+        set laststatus=0
+        set noshowcmd
+    else
+        let s:hidden_all = 0
+        set showmode
+        set ruler
+        set laststatus=2
+        set showcmd
+    endif
 endfunction
-
-set statusline=
-set statusline+=%m
-set statusline+=\ %f
-set statusline+=%=
-set statusline+=\ %{LinterStatus()}
-filetype on
-
-" Automatically change directory when opening files, changing buffers etc
-set autochdir
-set number relativenumber
+nnoremap <leader>h :call ToggleHiddenAll()<CR>
+" Load command shortcuts generated from bm-dirs and bm-files via shortcuts script.
+" Here leader is ";".
+" So ":vs ;cfz" will expand into ":vs /home/<user>/.config/zsh/.zshrc"
+" if typed fast without the timeout.
+silent! source ~/.config/nvim/shortcuts.vim
