@@ -2,6 +2,16 @@
 some dotfiles that i have them . some of my files
 are based to other peoples and i give a credit .
 
+# alias & paths
+
+ Most of them are some extra things that i want put on
+ my zshrc and I dont want to make it kinda messy I did that
+
+ https://github.com/jemadux/dotfiles/blob/main/.oh-my-zsh/custom/plugins/jemadux/jemadux.plugin.zsh
+ Those are my alias and some of them are based
+ on some youtubers like Luke Smith .
+ https://github.com/jemadux/dotfiles/blob/main/.oh-my-zsh/custom/plugins/paths/paths.plugin.zsh
+
 # nvim
 i am using https://github.com/LukeSmithxyz/voidrice nvim
 with my preferences .
