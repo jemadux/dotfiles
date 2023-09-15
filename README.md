@@ -14,6 +14,11 @@ with Onre's Fetch with my customizations . and it works fine
 I am using I have my alias as jemadux.plugin.zsh
 also I want put some plugins on my setup I made a script that will work .
 
+# aptsearch
+
+I am using linuxdabbler's apt search beacause I am using confy .
+https://gitlab.com/linuxdabbler/dotfiles .
+I have modified to working only with sudo command
 
 # Hakuneko config
 because I am reading manga of one piece I have set to download from
