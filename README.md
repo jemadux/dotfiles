@@ -13,8 +13,8 @@ are based to other peoples and i give a credit .
  https://github.com/jemadux/dotfiles/blob/main/.oh-my-zsh/custom/plugins/paths/paths.plugin.zsh
 
 # nvim
-i am using https://github.com/LukeSmithxyz/voidrice nvim
-with my preferences .
+i am using https://github.com/nvim-lua/kickstart.nvim as some defaults 
+small changes that I have done to my conf . not much but works for me :)
 
 # neofetch
 I am using https://github.com/Chick2D/neofetch-themes config
