@@ -1,7 +1,7 @@
 {
   "frontend": "frontend@classic-dark",
   "readerEnabled": true,
-  "baseDirectory": "/home/jemadux/Documents/Mangas",
+  "baseDirectory": "/home/jemadux/documents/mangas",
   "bookmarkDirectory": "/home/jemadux/.config/hakuneko-desktop",
   "useSubdirectory": false,
   "chapterTitleFormat": "",

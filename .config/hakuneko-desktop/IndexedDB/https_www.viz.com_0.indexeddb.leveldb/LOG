@@ -1,0 +1,9 @@
+2024/03/02-23:25:40.840 16a2 Reusing MANIFEST /home/jemadux/.config/hakuneko-desktop/IndexedDB/https_www.viz.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/03/02-23:25:40.864 16b6 Current memtable full; waiting...
+2024/03/02-23:25:40.864 16de Level-0 table #5: started
+2024/03/02-23:25:40.867 16de Level-0 table #5: 737 bytes OK
+2024/03/02-23:25:40.870 16de Delete type=0 #3
+2024/03/02-23:25:40.870 16de Level-0 table #7: started
+2024/03/02-23:25:40.870 16de Level-0 table #7: 0 bytes OK
+2024/03/02-23:25:40.873 16de Delete type=0 #4
+2024/03/02-23:25:40.873 16de Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

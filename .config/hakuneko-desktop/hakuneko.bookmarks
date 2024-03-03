@@ -1,12 +1,12 @@
 [
   {
     "title": {
-      "connector": "MangaReaderSite",
+      "connector": "Manganato",
       "manga": "One Piece"
     },
     "key": {
-      "connector": "mangareadersite",
-      "manga": "one-piece_114"
+      "connector": "manganel",
+      "manga": "https://chapmanganato.to/manga-aa951409"
     }
   }
 ]
