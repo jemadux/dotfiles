@@ -26,6 +26,10 @@ I am using linuxdabbler's apt search beacause I am using confy .
 https://gitlab.com/linuxdabbler/dotfiles .
 I have modified to working only with sudo command
 
+# compile emacs 
+Comastas Smaragdakis gave me his compile flags for his emacs on his fedora 
+and I thought good idea to port it on my debian-based system    
+
 # Hakuneko config
 because I am reading manga of one piece I have set to download from
 specific site and I importing them to calibre .
