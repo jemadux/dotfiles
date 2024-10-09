@@ -1,6 +1,7 @@
 ./configure \
   --without-pop \
   --with-mailutils \
+  --prefix=$HOME/.local \
   --with-xwidgets \
   --with-cairo \
   --without-compress-install \
