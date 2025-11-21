@@ -13,9 +13,11 @@ alias scast='mplayer -tv driver=v4l2:width=320:height=240: -vo xv tv:// -geometr
 alias upzsh='source ~/.zshrc'
 alias upomz='omz update'
 alias c='clear'
-#custom applications i want to run with sudo privileges
+#cus
 alias sedit='sudoedit'
 alias edit='editor'
+alias edit-alias='editor $ZSH_CUSTOM/plugins/jemadux/jemadux.plugin.zsh'
+alias view-alias='pager $ZSH_CUSTOM/plugins/jemadux/jemadux.plugin.zsh'
 ##details
 alias	details='inxi -Fxxxza'
 #coomon allias
