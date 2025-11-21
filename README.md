@@ -20,3 +20,17 @@ just common zsh with some plugins enabled by default
 I am using linuxdabbler's apt search beacause I am using confy .
 https://gitlab.com/linuxdabbler/dotfiles .
 I have modified to working only with sudo command
+
+# apt 
+Linux Mint's apt wrapper . I feel it's handy and if I want
+to use it on servers :) 
+
+## spaceship config 
+Because I am using Spaceship prompt , I want be so much clean 
+just two lines - like 
+``
+$PWD 
+❯
+``
+and not showing the spaces :) 
+
