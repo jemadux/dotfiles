@@ -25,7 +25,13 @@ I have modified to working only with sudo command
 Linux Mint's apt wrapper . I feel it's handy and if I want
 to use it on servers :) 
 
-## spaceship config 
+# mint tweaks 
+Some minor tweaks . before run 
+On mint I want to disable the asterisks when I type sudo sorry folks 
+but I used to not showing any feedback 
+and fixing the cursor on flatpak applications , you can run as single commands 
+
+# spaceship config 
 Because I am using Spaceship prompt , I want be so much clean 
 just two lines - like 
 ``

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+## This commands you can copy paste to your terminal but because I want 
+## to make it faster I makde that script of course you can comment or not
+
+
+## Disable asterisks when type sudo 
+sudo mv /etc/sudoers.d/0pwfeedback /etc/sudoers.d/0pwfeedback.disabled
+
+
+## Make flatpak apps have same cursor as all rest system 
+mkdir -p $HOME/.local/share/icons/default
+echo "[icon theme]Inherits=Bibata-Modern-Classic" > $HOME/.local/share/icons/default/index.theme
+
+
