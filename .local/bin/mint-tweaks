@@ -12,4 +12,5 @@ sudo mv /etc/sudoers.d/0pwfeedback /etc/sudoers.d/0pwfeedback.disabled
 mkdir -p $HOME/.local/share/icons/default
 echo "[icon theme]Inherits=Bibata-Modern-Classic" > $HOME/.local/share/icons/default/index.theme
 
-
+#Default Client for torrents 
+gio mime x-scheme-handler/magnet org.qbittorrent.qBittorrent.desktop
