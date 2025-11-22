@@ -8,9 +8,18 @@
 sudo mv /etc/sudoers.d/0pwfeedback /etc/sudoers.d/0pwfeedback.disabled
 
 
-## Make flatpak apps have same cursor as all rest system 
+## Make flatpak apps have same cursor as all rest system plus 
+#new users have flatpak cursor to be same as main machine 
 mkdir -p $HOME/.local/share/icons/default
-echo "[icon theme]Inherits=Bibata-Modern-Classic" > $HOME/.local/share/icons/default/index.theme
+tee $HOME/.local/share/icons/default/index <<EOF
+[icon theme]
+Inherits=Bibata-Modern-Classic
+EOF
+sudo mkdir -p /etc/.skel/.local/share/icons/default
+sudo tee /etc/skel/.local/share/icons/default/index <<EOF
+[icon theme]
+Inherits=Bibata-Modern-Classic
+EOF
 
 #Default Client for torrents 
 gio mime x-scheme-handler/magnet org.qbittorrent.qBittorrent.desktop
