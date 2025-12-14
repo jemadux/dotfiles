@@ -1,0 +1,13 @@
+[user]
+name = Joe Doe
+email = joe@doe.com 
+signingkey =1A2B3C4D5E6F7890
+[github]
+user = joe.doe
+token = Classic-token-generated
+[commit]
+gpgsign = true
+[gpg]
+program = /usr/bin/gpg
+[core]
+	editor = nvim
