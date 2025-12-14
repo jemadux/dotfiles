@@ -78,7 +78,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git paths  vscode jemadux github debian gh fzf command-not-found colored-man-pages  fast-syntax-highlighting  zsh-vi-mode )
+plugins=(git paths  gsettings vscode jemadux github  gh fzf command-not-found colored-man-pages  fast-syntax-highlighting  zsh-vi-mode )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,3 +110,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+### bling.sh source start
+test -f /usr/share/ublue-os/bling/bling.sh && source /usr/share/ublue-os/bling/bling.sh
+### bling.sh source end

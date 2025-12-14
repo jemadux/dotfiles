@@ -11,6 +11,7 @@ are based to other peoples and i give a credit .
  on some youtubers like Luke Smith .
  https://github.com/jemadux/dotfiles/blob/main/.oh-my-zsh/custom/plugins/paths/paths.plugin.zsh
 
+gsettings - some gsettings i have use of have as reffenrence 
 
 # ohmyzsh
 just common zsh with some plugins enabled by default 

@@ -62,8 +62,6 @@ alias geminstall='gem install --user-install'
 # kodi is installed on tv bpx
 # so I am doing testing with flatpak
 alias rmkodi='rm -rf ~/.var/app/tv.kodi.Kodi'
-##hosts
-alias clear-entries-vm='gsettings reset org.virt-manager.virt-manager.urls isos'
 #make  cmmake
 alias make-cores='make -j$(nproc)'
 alias cmake-cores='cmake --build . --parallel $(nproc)'
