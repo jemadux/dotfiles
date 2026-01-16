@@ -42,10 +42,8 @@ alias diff='diff --color=auto'
 alias wbsrv='python3 -m http.server'
 alias ping='prettyping'
 ### Package Manager Apt
-alias uchoose='ujust --choose'
-alias utoogle='ujust toggle-user-motd'
-alias bf-cli='ujust bluefin-cli'
-alias brew-help='brew help'
+alias ucs='ucaresystem-core'
+
 ## usefull alias
 alias lsblk='lsblk -e7'
 alias df='df -x squashfs'
