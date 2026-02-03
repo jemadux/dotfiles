@@ -1,0 +1,18 @@
+./configure \
+  --without-pop \
+  --with-mailutils \
+  --with-xwidgets \
+  --with-cairo \
+  --without-compress-install \
+  --with-native-compilation \
+  --with-json \
+  --with-dbus \
+  --with-gif \
+  --with-jpeg \
+  --with-png \
+  --with-rsvg \
+  --with-tiff \
+  --with-webp \
+  --with-gpm \
+  --with-modules \
+  --with-harfbuzz
