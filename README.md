@@ -1,4 +1,4 @@
-some dotfiles that i have them . some of my files
+Some dotfiles that i have them . Some of my files
 are based to other peoples and i give a credit .
 
 
@@ -8,7 +8,7 @@ Will be working fine :)
 # alias & paths
 
  Most of them are some extra things that i want put on
- my zshrc and I dont want to make it kinda messy I did that
+ my zshrc and I don't want to make it kinda messy I did that
 
  https://github.com/jemadux/dotfiles/blob/main/.oh-my-zsh/custom/plugins/jemadux/jemadux.plugin.zsh
  Those are my alias and some of them are based
@@ -18,8 +18,7 @@ Will be working fine :)
 gsettings - some gsettings i have use of have as reffenrence 
 
 brew aps alias 
-on servers i prefer some homebrew apps so I can have neovim that is latest
-with chadrc
+on servers i prefer some homebrew apps so I can have lazyvim 
 
 # ohmyzsh
 just common zsh with some plugins enabled by default 
@@ -50,6 +49,7 @@ $PWD
 and not showing the spaces :) 
 
 # neovim 
-I am using nvchad and I want some variables to be mine :) like relative numbers 
-and some custom theme :) 
+I am using lazyvim  
+Theme = ayu-dark 
+spellchecking = Greek and US English 
 
