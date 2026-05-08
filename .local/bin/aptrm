@@ -1,6 +1,4 @@
 #!/bin/bash
-
-# Showing only installed packages
 apt-mark showmanual |
   sort |
   fzf --multi --exact --cycle --reverse --preview 'nala show {1}' |
