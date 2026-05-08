@@ -1,0 +1,8 @@
+font-family = JetBrainsMono Nerd Font
+theme = flexoki-dark
+font-size = 11.5
+font-thicken = true
+font-variation = wght=500
+adjust-cell-height = 15%
+window-padding-x = 4
+window-padding-y = 4
