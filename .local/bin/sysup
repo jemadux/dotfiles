@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "🚀 Starting global update with Topgrade..."
+topgrade
+
+echo -e "\n🧹 Cleaning up system (Autoremove & Clean)..."
+sudo nala autoremove -y
+sudo nala clean
+
+echo -e "\n📦 Cleaning up Flatpak (Unused runtimes)..."
+flatpak uninstall --unused -y
+
+echo -e "\n\n✅ Everything is up to date and clean!"
+$SHELL 

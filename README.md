@@ -35,7 +35,7 @@ To install nala the command is
 ` apt install nala` 
 aptin = apt install 
 aptrm = apt remove 
-aptup = topgrade + remove some things . something like ucaresystem-core but for desktops  
+system-up = topgrade + remove some things . something like ucaresystem-core but for desktops  
 # apt 
 Linux Mint's apt wrapper . I feel it's handy and if I want
 to use it on servers :) 
