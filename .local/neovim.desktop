@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Neovim
+Comment=Edit text files
+Exec=ghostty -e /home/linuxbrew/.linuxbrew/bin/nvim %F
+Comment=Text Editor
+Terminal=false
+Icon=nvim
+Type=Application
+Categories=Utility;TextEditor;
+StartupNotify=false
+MimeType=text/plain;application/x-zerosize;

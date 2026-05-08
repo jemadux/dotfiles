@@ -1,0 +1,8 @@
+#!/bin/bash
+
+apt-cache search "" |
+  sort |
+  cut --delimiter " " --fields 1 |
+  fzf --multi --exact --cycle --reverse --preview 'nala show {1}' |
+  xargs -r sudo nala install -y
+$SHELL
