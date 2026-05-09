@@ -1,6 +1,8 @@
 Some dotfiles that i have them . Some of my files
 are based to other peoples and i give a credit .
 
+Those dotfiles is like my playground :) that I will have a 
+good base as backup 
 
 Just link the files on your $HOME directory . 
 Will be working fine :)
@@ -48,7 +50,7 @@ and fixing the cursor on flatpak applications , you can run as single commands
 
 # neovim 
 I am using lazyvim  
-Theme = lexoki dark
+Theme = Flexokilexoki dark
 spellchecking = Greek and US English 
 in .local/share/applications/nevim you will see that weird neovim 
 because i am using homebrew to install it .. I dont have to download it 
@@ -62,4 +64,13 @@ Pane borders: dim inactive, blue active
 Copy mode, messages, clock — all themed consistently
 Vi-style keybinds: |/- for splits, h/j/k/l navigation, prefix+r to reload
 Mouse support, 256-color + RGB truecolor enabled
-Prefix is now Alt+a 
+Prefix is now Alt+a
+
+Yazi 2026.05.09 
+Yazi fm config theme flexoki-dark 😂 + forcing for now to open files on mpv
+It broke my nerves . shoutout to @Mingo that i show how to fix it :) 
+flexoki theme is available  
+```
+ya pkg add gosxrgxx/flexoki-dark 
+```
+```
