@@ -6,3 +6,4 @@ font-variation = wght=500
 adjust-cell-height = 15%
 window-padding-x = 4
 window-padding-y = 4
+wait-after-command = true
