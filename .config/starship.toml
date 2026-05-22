@@ -1,0 +1,15 @@
+# ~/.config/starship.toml
+
+# Disable execution time display (equivalent to SPACESHIP_EXEC_TIME_SHOW=false)
+[cmd_duration]
+disabled = true
+
+# Disable time display (equivalent to SPACESHIP_TIME_SHOW=false)
+[time]
+disabled = true
+
+# Character settings (equivalent to SPACESHIP_CHAR_SYMBOL & SPACESHIP_CHAR_SUFFIX)
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+# Starship handles the suffix via the character symbol definition
