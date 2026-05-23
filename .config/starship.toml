@@ -1,15 +1,40 @@
 # ~/.config/starship.toml
 
-# Disable execution time display (equivalent to SPACESHIP_EXEC_TIME_SHOW=false)
+# Specify the palette to use
+palette = "flexoki-dark"
+
+# Define the custom palette colors
+[palettes.flexoki-dark]
+black    = "#100f0f"
+base     = "#1c1b1a"
+surface  = "#282726"
+overlay  = "#575653"
+muted    = "#878580"
+subtle   = "#b7b5b0"
+text     = "#cecdc3"
+red      = "#af3029"
+orange   = "#bc5215"
+yellow   = "#ad8900"
+green    = "#66800b"
+cyan     = "#24837b"
+blue     = "#205ea6"
+purple   = "#5e60ce"
+magenta  = "#8f3387"
+
+# Settings for modules
 [cmd_duration]
 disabled = true
 
-# Disable time display (equivalent to SPACESHIP_TIME_SHOW=false)
 [time]
 disabled = true
 
-# Character settings (equivalent to SPACESHIP_CHAR_SYMBOL & SPACESHIP_CHAR_SUFFIX)
 [character]
+# Here, "green" and "red" refer to the keys defined in [palettes.flexoki-dark]
 success_symbol = "[❯](bold green)"
 error_symbol = "[❯](bold red)"
-# Starship handles the suffix via the character symbol definition
+
+# Example: If you want to use other colors from your palette elsewhere:
+[directory]
+style = "bold blue"
+truncation_length = 3
+truncation_symbol = "…/"
