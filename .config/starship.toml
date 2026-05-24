@@ -38,3 +38,9 @@ error_symbol = "[❯](bold red)"
 style = "bold blue"
 truncation_length = 3
 truncation_symbol = "…/"
+#Nerd Font looking like ghostty lock
+read_only = " "
+# nerd font looking like statrhip lock
+#read_only = " "
+read_only_style = "bold orange"
+
