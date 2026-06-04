@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+set -e # Exit immediately if a command exits with a non-zero status
+
+# 1. Define Variables
+TEXDIR="$HOME/.local/share/texlive"
+TEXMFHOME="$HOME/texmf"
+TEXMFCONFIG="$HOME/.config/texlive/texmf-config"
+TEXMFVAR="$HOME/.local/share/texlive/texmf-var"
+
+# Create a unique temporary working directory inside /tmp
+WORK_DIR=$(mktemp -d /tmp/texlive-install.XXXXXX)
+
+# Ensure cleanup happens even if the script crashes or is interrupted
+trap 'rm -rf "$WORK_DIR"' EXIT
+
+echo "Downloading TeX Live installer to temporary directory..."
+wget -q http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz -O "$WORK_DIR/install-tl-unx.tar.gz"
+
+echo "Extracting installer..."
+tar -xzf "$WORK_DIR/install-tl-unx.tar.gz" -C "$WORK_DIR"
+
+# Find the extracted directory inside /tmp dynamically
+INSTALL_DIR=$(find "$WORK_DIR" -maxdepth 1 -type d -name "install-tl-20*" | head -n 1)
+
+if [ -z "$INSTALL_DIR" ]; then
+    echo "Error: Could not find extracted install-tl directory."
+    exit 1
+fi
+
+cd "$INSTALL_DIR"
+
+echo "Starting TeX Live installation (this may take a while)..."
+./install-tl --no-interaction \
+  --texdir="$TEXDIR" \
+  --texmfhome="$TEXMFHOME" \
+  --texmfconfig="$TEXMFCONFIG" \
+  --texmfvar="$TEXMFVAR"
+
+# 2. Add Paths to .profile
+echo "Updating ~/.profile..."
+
+# Determine the exact architecture directory dynamically (e.g., x86_64-linux)
+ARCH_DIR=$(ls "$TEXDIR/bin" | head -n 1)
+FULL_BIN_PATH="$TEXDIR/bin/$ARCH_DIR"
+
+if [ -n "$ARCH_DIR" ]; then
+    # Write to .profile if the path isn't already there
+    if ! grep -q "$FULL_BIN_PATH" "$HOME/.profile"; then
+        echo "" >> "$HOME/.profile"
+        echo "# TeX Live Paths" >> "$HOME/.profile"
+        echo "export PATH=\"\$PATH:$FULL_BIN_PATH\"" >> "$HOME/.profile"
+        echo "TeX Live successfully added to PATH."
+    else
+        echo "TeX Live path already exists in ~/.profile."
+    fi
+else
+    echo "Warning: Could not automatically determine the binary architecture path."
+fi
+
+echo "Installation complete! Please run 'source ~/.profile' or log out and back in."
