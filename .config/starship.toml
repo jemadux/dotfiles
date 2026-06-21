@@ -36,7 +36,7 @@ error_symbol = "[❯](bold red)"
 # Example: If you want to use other colors from your palette elsewhere:
 [directory]
 style = "bold italic orange"
-format = "[ ](bold red)[$path](bold italic orange)[$read_only]($read_only_style) "
+format = "[$path](bold italic orange)[$read_only]($read_only_style) "
 truncation_length = 3
 truncation_symbol = "…/"
 read_only = " "
