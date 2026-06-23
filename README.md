@@ -50,15 +50,15 @@ and fixing the cursor on flatpak applications , you can run as single commands
 
 # neovim 
 I am using lazyvim  
-Theme = Flexokilexoki dark
+Theme = Ayulexoki dark
 spellchecking = Greek and US English 
 in .local/share/applications/nevim you will see that weird neovim 
 because i am using homebrew to install it .. I dont have to download it 
 again and again :) 
 
 tmux config 
-Full Flexoki Dark palette (#100f0f base → all 8 accent hues)
-Status bar — session name badge in Flexoki blue (left), date/time/host (right)
+Full Ayu Dark palette (#100f0f base → all 8 accent hues)
+Status bar — session name badge in Ayu blue (left), date/time/host (right)
 Active window tab with subtle bg highlight and green zoom indicator
 Pane borders: dim inactive, blue active
 Copy mode, messages, clock — all themed consistently
@@ -67,10 +67,10 @@ Mouse support, 256-color + RGB truecolor enabled
 Prefix is now Alt+a
 
 Yazi 2026.05.09 
-Yazi fm config theme flexoki-dark 😂 + forcing for now to open files on mpv
+Yazi fm config theme Ayu-dark 😂 + forcing for now to open files on mpv
 It broke my nerves . shoutout to @Mingo that i show how to fix it :) 
-flexoki theme is available  
+Ayu theme is available  
 ```
-ya pkg add gosxrgxx/flexoki-dark 
+ya pkg add gosxrgxx/Ayu-dark 
 ```
 ```

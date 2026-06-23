@@ -1,25 +1,26 @@
 # ~/.config/starship.toml
 
 # Specify the palette to use
-palette = "flexoki-dark"
+palette = "ayu-dark"
 
 # Define the custom palette colors
-[palettes.flexoki-dark]
-black    = "#100f0f"
-base     = "#1c1b1a"
-surface  = "#282726"
-overlay  = "#575653"
-muted    = "#878580"
-subtle   = "#b7b5b0"
-text     = "#cecdc3"
-red      = "#af3029"
-orange   = "#bc5215"
-yellow   = "#ad8900"
-green    = "#66800b"
-cyan     = "#24837b"
-blue     = "#205ea6"
-purple   = "#5e60ce"
-magenta  = "#8f3387"
+[palettes.ayu-dark]
+black   = "#0f1419"
+base    = "#14191f"
+surface = "#191e2a"
+overlay = "#242936"
+muted   = "#3e4b59"
+subtle  = "#5c6773"
+text    = "#e6b450" 
+fg      = "#f07178" 
+red     = "#ff3333"
+orange  = "#ff7733"
+yellow  = "#e6b450"
+green   = "#7fd962"
+cyan    = "#95e6cb"
+blue    = "#39bae6"
+purple  = "#f29718"
+magenta = "#f07178"
 
 # Settings for modules
 [cmd_duration]

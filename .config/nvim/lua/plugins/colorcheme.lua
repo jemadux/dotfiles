@@ -1,28 +1,14 @@
 return {
-  -- The Colorscheme Plugin
   {
-    "cpplain/flexoki.nvim",
-    name = "flexoki",
+    "Shatur/neovim-ayu",
     lazy = false,
     priority = 1000,
-    opts = {
-      -- "dark" uses #101010 (Ink)
-      -- "light" uses #FFFCF0 (Paper)
-      theme = "dark",
-      transparent_bg = true,
-      italic_comments = true,
-    },
-    config = function(_, opts)
-      require("flexoki").setup(opts)
-      vim.cmd([[colorscheme flexoki]])
+    config = function()
+      require("ayu").setup({
+        mirage = false, -- Set to true if you prefer the Mirage variant
+        terminal = true,
+      })
+      vim.cmd.colorscheme("ayu")
     end,
-  },
-
-  -- Adjusting LazyVim UI to match
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "flexoki",
-    },
   },
 }

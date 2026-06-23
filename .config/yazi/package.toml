@@ -5,3 +5,8 @@ deps = []
 use = "gosxrgxx/flexoki-dark"
 rev = "25d28ce"
 hash = "8e6dd7e42a127173e4535993d3e0e393"
+
+[[flavor.deps]]
+use = "kmlupreti/ayu-dark"
+rev = "00804da"
+hash = "d2ce8358c59ea6e8552091075b3a191c"
