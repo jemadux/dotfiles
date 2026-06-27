@@ -5,4 +5,5 @@ alias gset-rd-off='gsettings set org.gnome.desktop.privacy remember-recent-files
 alias gset-rd-on='gsettings set org.gnome.desktop.privacy remember-recent-files true'
 alias gset-temp-c='gsettings set org.gnome.GWeather4 temperature-unit centigrade'
 alias gset=temp-f='gsettings set org.gnome.gweather4 temperature-unit fahrenheit'
-
+alias gset-pointer-on='gsettings set org.gnome.desktop.interface locate-pointer true'
+alias gset-pointer-off='gsettings set org.gnome.desktop.interface locate-pointer false'
