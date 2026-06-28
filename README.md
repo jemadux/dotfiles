@@ -73,4 +73,13 @@ Ayu theme is available
 ```
 ya pkg add gosxrgxx/Ayu-dark 
 ```
+
+
+Fastfetch 
+My fastfetch based on someone on internet . I found it on github. 
+I dont remember who was . But I edited so will be awesome for me 
+Currently I am on Ubuntu and I prefer it like that .
+My terminal of choice is ghostty and It renders by default images .
+If you want another distro please replace the logo of your distro 
+on fastfetch and add another logo 
 ```
